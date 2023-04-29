@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/rana/Desktop/DEB_Simulator-main/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/rana/Desktop/DEB_Simulator-main/src/open_manipulator_dependencies/roboticsgroup_gazebo_plugins/include/**",
+        "/home/rana/Desktop/DEB_Simulator-main/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/rana/Desktop/DEB_Simulator-main/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/rana/Desktop/DEB_Simulator-main/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup/include/**",
+        "/home/rana/Desktop/DEB_Simulator-main/src/turtlebot3_manipulation/turtlebot3_manipulation_gui/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

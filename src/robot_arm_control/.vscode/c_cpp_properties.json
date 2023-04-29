@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ebrahim/projects/DEB_Simulator/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/ebrahim/projects/DEB_Simulator/src/open_manipulator_dependencies/roboticsgroup_gazebo_plugins/include/**",
+        "/home/ebrahim/projects/DEB_Simulator/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/ebrahim/projects/DEB_Simulator/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/ebrahim/projects/DEB_Simulator/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup/include/**",
+        "/home/ebrahim/projects/DEB_Simulator/src/turtlebot3_manipulation/turtlebot3_manipulation_gui/include/**",
+        "/home/ebrahim/projects/DEB_Simulator/src/turtlebot3/turtlebot3_slam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

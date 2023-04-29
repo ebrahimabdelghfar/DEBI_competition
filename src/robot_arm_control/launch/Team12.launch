@@ -1,0 +1,5 @@
+<launch>
+  <node name="Vision" pkg="robot_arm_control" type="HoughCircle.py"/>
+  <include file="$(find turtlebot3_manipulation_moveit_config)/launch/move_group.launch"/>
+  <node name="Control" pkg="robot_arm_control" type="ControlTurtle.py" output="screen"/>
+</launch>
