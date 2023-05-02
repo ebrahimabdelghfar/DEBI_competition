@@ -15,8 +15,10 @@ sudo apt install ros-noetic-dynamixel-sdk
 sudo apt install ros-noetic-turtlebot3-msgs
 sudo apt install ros-noetic-turtlebot3
 ```
-# How to operate the Robot 
-
+# How to operate the Robot
+steps on how to bring up the robot 
+```
+```
 # Todo
 ## Day 1 Todo
 - [ ]  Calibrate camera
