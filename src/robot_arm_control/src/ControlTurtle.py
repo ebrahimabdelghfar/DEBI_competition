@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from Import import *
-from arm_contol import *
-from control import *
+# from arm_contol import *
 BallDetectedFlag=False
+flag_safe=True
 position=0
 yaw=0
 #BallInfo
@@ -38,7 +38,9 @@ def BallSerach():
             break
 
 def approachBall(SetpointRadius=62):
-    global ErrorCenters,Radius,BallDetectedFlag
+    global ErrorCenters,Radius,BallDetectedFlag, position
+    if position.x>1.35:
+        BallSerach()
     while (True):
         msg=Twist()
         msg.linear.x=(abs(Radius-SetpointRadius)/SetpointRadius)*0.21
@@ -64,24 +66,12 @@ def clearRot():
     msg.angular.z=0.0
     msg.linear.x=0.0
     RobotControl.publish(msg)
-    
+
 rospy.Subscriber("/odom",Odometry,odom_callback)
 rospy.Subscriber("/BallFlag",Bool,BallDetected)
 rospy.Subscriber("/Ball_info",Float32MultiArray,BallInfo)
 RobotControl=rospy.Publisher("/cmd_vel",Twist,queue_size=1,latch=True)
-navigate=ControlTheTurtlebot3()
-i=0
-while(i!=3):
-    BallSerach()
-    approachBall()
-    arm_pack_ball()
-    navigate.set_theta_point(math.atan2(0,1.5))
-    posy=position.y
-    navigate.move_to_goal((1.66),posy)
-    arm_unpack_ball()
-    navigate.move_backward(duration=8)
-    clearRot()
-    i+=1
+
 
 
 

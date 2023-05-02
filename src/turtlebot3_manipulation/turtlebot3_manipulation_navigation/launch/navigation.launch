@@ -12,7 +12,7 @@
   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
     <param name="publish_frequency" type="double" value="50.0" />
   </node>
-
+  
   <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter" output="screen" >
     <rosparam command="load" file="$(find turtlebot3_manipulation_slam)/config/scan_data_filter.yaml" />
   </node>  
@@ -24,7 +24,7 @@
   <include file="$(find turtlebot3_manipulation_navigation)/launch/amcl.launch">
     <arg name="initial_pose_x"  value="0.0" />
     <arg name="initial_pose_y"  value="0.0" />
-    <arg name="initial_pose_a"  value="1.5708" />
+    <arg name="initial_pose_a"  value="0.0" />
   </include>
 
   <!-- move_base -->
@@ -38,5 +38,12 @@
     <node pkg="rviz" type="rviz" name="rviz" required="true"
           args="-d $(find turtlebot3_manipulation_navigation)/rviz/turtlebot3_manipulation_navigation.rviz" output="screen"/>
   </group>
-  <node pkg="tf" type="static_transform_publisher" name="RedLineLocation" args="1.55 0 0 0 0 0 /map /RedLine 100"/> 
+  <node pkg="tf" type="static_transform_publisher" name="RedLineLocation" args="1.55 0 0 0 0 0 /map /RedLine 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="odom" args="0 0 0 0 0 0 /map /odom 100"/>  
+  <param name="move_base/local_costmap/inflation_radius" value="0.0"/>
+  <param name="/move_base/global_costmap/inflation_radius" value="0.0"/>
+  <param name="move_base/DWAPlannerROS/max_vel_theta" value="1.5"/>
+  <param name="move_base/DWAPlannerROS/max_vel_trans" value="0.2"/>
+  <param name="/move_base/DWAPlannerROS/xy_goal_tolerance" value="0.08"/>
+  <param name="/move_base/DWAPlannerROS/yaw_goal_tolerance" value="0.2"/>
 </launch>

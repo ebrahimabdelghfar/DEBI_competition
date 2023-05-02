@@ -62,15 +62,14 @@ class RobotControl:
             angle_is_degree : if the input angle is in degree
         '''
         if (angle_is_degree):
-            joint_goal=[joint_goal_list[0]*math.pi/180,joint_goal_list[1]*math.pi/180,joint_goal_list[2]*math.pi/180,joint_goal_list[3]*math.pi/180]
-        else:
-            joint_goal=joint_goal_list
+            for i in range(len(joint_goal_list)):
+                joint_goal_list[i]=joint_goal_list[i]*math.pi/180
         # set the velocity of the robot
         self.move_group.set_max_velocity_scaling_factor(velocity)
         # set the acceleration of the robot
         self.move_group.set_max_acceleration_scaling_factor(acceleration)
         # set the goal joint state
-        self.move_group.go(joint_goal,wait=True)
+        self.move_group.go(joint_goal_list,wait=True)
         # stop any residual movement
         self.move_group.stop()
         pass

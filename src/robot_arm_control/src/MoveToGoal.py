@@ -5,6 +5,8 @@ class NavigateToGoal():
     def __init__(self):
         self.move_base = actionlib.SimpleActionClient("move_base", MoveBaseAction)
         self.move_base.wait_for_server()
+        self.move_base.stop_tracking_goal()
+        self.cmd_vel_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
     def goto(self, goal):
         '''
         argument: 
@@ -28,5 +30,9 @@ class NavigateToGoal():
         self.move_base.send_goal(robot_goal)
         self.move_base.wait_for_result()
     def Stop(self):
-        self.move_base.cancel_goal()
-move= NavigateToGoal()
+        self.move_base.cancel_all_goals()
+        rospy.sleep(2)
+        self.cmd_vel_pub.publish(Twist())
+        rospy.sleep(1)
+        
+
