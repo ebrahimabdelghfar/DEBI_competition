@@ -27,8 +27,8 @@ steps on how to bring up the robot
 - [x]  control robot
 - [x]  mapping (by knowing starting position)
 ## Day 2 Todo
--[ ] Make map from starting position 
--[ ] Collect bag of cmd and /scan /cmd_vel /odom /imu
+- [ ] Make map from starting position 
+- [ ] Collect bag of cmd and /scan /cmd_vel /odom /imu
 # Topics of Real life
 ```
 /battery_state
