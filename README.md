@@ -21,7 +21,7 @@ steps on how to bring up the robot
 ```
 # Todo
 ## Day 1 Todo
-- [ ]  Calibrate camera
+- [✓]  Calibrate camera
 - [ ]  tune parameter contours and Hough
 - [ ]  topics of Real Robot
 - [ ]  control robot
