@@ -16,14 +16,16 @@ sudo apt install ros-noetic-turtlebot3-msgs
 sudo apt install ros-noetic-turtlebot3
 ```
 # How to operate the Robot
-before any thing add the following 2 lines in your bashrc
+* before any thing add the following 2 lines in your bashrc
 ```
 #export ROS_MASTER_URI=http://your_device_ip:11311
 #export ROS_IP=your_device_IP
 ```
-steps on how to bring up the robot
-## Terminal 1
+save the file then out and close all the terminal  
 
+## Terminal 1
+1. ```roscore```
+## Terminal 2
 ```
 ssh ubuntu@<ip_of_the_robot>
 ```
@@ -31,6 +33,13 @@ ssh ubuntu@<ip_of_the_robot>
 * The password of the robot is **turtlebot**
 * Enter your IP of the computer getting it from ```ifconfig``` in the MasterIP
 * ```roslaunch turtlebot3_bringup turtlebot3_robot.launch```
+## terminal 3
+1. ```cd team12_ws```
+2. ```roslaunch turtlebot3_manipulation_bringup turtlebot3_manipulation_bringup.launch```
+## terminal 4
+1. ```roslaunch turtlebot3_manipulation_moveit_config move_group.launch```
+
+
 # Todo
 ## Day 1 Todo
 - [x]  Calibrate camera
