@@ -61,3 +61,7 @@ steps on how to bring up the robot
 /version_info
 
 ```
+# Output of meeting 4/5/2023
+ * Slightly tune Hough 
+ * t3rfo ezay 45al transform 
+# 
