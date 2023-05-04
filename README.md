@@ -29,7 +29,8 @@ steps on how to bring up the robot
 ## Day 2 Todo
 - [ ] Make map from starting position 
 - [ ] Collect bag after maping 
-- [ ] Ask enna ezay nzbot el latency  
+- [ ] Ask enna ezay nzbot el latency
+- [ ] test el arm of the robot 
 # Topics of Real life
 ```
 /battery_state
