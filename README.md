@@ -16,9 +16,14 @@ sudo apt install ros-noetic-turtlebot3-msgs
 sudo apt install ros-noetic-turtlebot3
 ```
 # How to operate the Robot
-steps on how to bring up the robot 
+steps on how to bring up the robot
+## Terminal 1
+
 ```
+ssh ubuntu@<ip_of_the_robot>
 ```
+**note**
+the password of the robot is **turtlebot**
 # Todo
 ## Day 1 Todo
 - [x]  Calibrate camera
