@@ -28,7 +28,7 @@ ssh ubuntu@<ip_of_the_robot>
 # Todo
 ## Day 1 Todo
 - [x]  Calibrate camera
-- [ ]  tune parameter contours and Hough
+- [x]  tune parameter contours and Hough
 - [x]  topics of Real Robot
 - [x]  control robot
 - [x]  mapping (by knowing starting position)
