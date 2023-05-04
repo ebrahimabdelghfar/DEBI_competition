@@ -23,7 +23,7 @@ steps on how to bring up the robot
 ssh ubuntu@<ip_of_the_robot>
 ```
 **note**
-* The password of the robot is *turtlebot*
+* The password of the robot is **turtlebot**
 * enter your IP of the computer getting it from ```ifconfig```
 # Todo
 ## Day 1 Todo
