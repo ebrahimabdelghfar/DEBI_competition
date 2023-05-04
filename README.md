@@ -35,9 +35,9 @@ ssh ubuntu@<ip_of_the_robot>
 ## Day 2 Todo
 - [ ] Make map from starting position (3)
 - [ ] Collect bag after maping (4)
-- [ ] Ask enna ezay nzbot el latency (5)
-- [ ] test el arm of the robot (1)
-- [ ] move el robot o howa 4ayf el balls (2)
+- [x] Ask enna ezay nzbot el latency (5) --------> m4 han3rf n3ml 7aga hanm4e el robot bera7a awwwy
+- [ ] test el arm of the robot (1) 
+- [x] move el robot o howa 4ayf el balls (2) 
 # Topics of Real life
 ```
 /battery_state
