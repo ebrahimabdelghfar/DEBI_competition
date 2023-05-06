@@ -54,11 +54,11 @@ ssh ubuntu@<ip_of_the_robot>
 - [x] test el arm of the robot (1) 
 - [x] move el robot o howa 4ayf el balls (2) 
 ## Day 3 Todo
--[] test amcl on real life
--[] test bashscript bta3 el connection 
--[] test perception  
--[] test PID
--[] 2dem el camera 
+- [ ] test amcl on real life
+- [ ] test bashscript bta3 el connection 
+- [ ] test perception  
+- [ ] test PID
+- [ ] 2dem el camera 
 # Topics of Real life
 ```
 /battery_state
