@@ -48,10 +48,10 @@ ssh ubuntu@<ip_of_the_robot>
 - [x]  control robot
 - [x]  mapping (by knowing starting position)
 ## Day 2 Todo
-- [ ] Make map from starting position (3)
-- [ ] Collect bag after maping (4)
+- [x] Make map from starting position (3)
+- [x] Collect bag after maping (4)
 - [x] Ask enna ezay nzbot el latency (5) --------> m4 han3rf n3ml 7aga hanm4e el robot bera7a awwwy
-- [ ] test el arm of the robot (1) 
+- [x] test el arm of the robot (1) 
 - [x] move el robot o howa 4ayf el balls (2) 
 # Topics of Real life
 ```
