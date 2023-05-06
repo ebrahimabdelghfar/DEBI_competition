@@ -34,7 +34,7 @@ ssh ubuntu@<ip_of_the_robot>
 * Enter your IP of the computer getting it from ```ifconfig``` in the MasterIP
 * ```roslaunch turtlebot3_bringup turtlebot3_robot.launch```
 ## terminal 3
-1. ```cd team12_ws```
+1. ```cd DEBI_competition```
 2. ```roslaunch turtlebot3_manipulation_bringup turtlebot3_manipulation_bringup.launch```
 ## terminal 4
 1. ```roslaunch turtlebot3_manipulation_moveit_config move_group.launch```
