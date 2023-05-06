@@ -53,6 +53,12 @@ ssh ubuntu@<ip_of_the_robot>
 - [x] Ask enna ezay nzbot el latency (5) --------> m4 han3rf n3ml 7aga hanm4e el robot bera7a awwwy
 - [x] test el arm of the robot (1) 
 - [x] move el robot o howa 4ayf el balls (2) 
+## Day 3 Todo
+-[] test amcl on real life
+-[] test bashscript bta3 el connection 
+-[] test perception  
+-[] test PID
+-[] 2dem el camera 
 # Topics of Real life
 ```
 /battery_state
