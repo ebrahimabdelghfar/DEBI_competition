@@ -18,8 +18,8 @@ sudo apt install ros-noetic-turtlebot3
 # How to operate the Robot
 * before any thing add the following 2 lines in your bashrc
 ```
-#export ROS_MASTER_URI=http://your_device_ip:11311
-#export ROS_IP=your_device_IP
+export ROS_MASTER_URI=http://your_device_ip:11311
+export ROS_IP=your_device_IP
 ```
 save the file then out and close all the terminal  
 
