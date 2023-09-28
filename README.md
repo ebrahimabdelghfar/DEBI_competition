@@ -93,6 +93,6 @@ ssh ubuntu@<ip_of_the_robot>
 # Video
 
 
+https://github.com/ebrahimabdelghfar/DEBI_competition/assets/81301684/c1931a54-8352-4ad8-b0b2-f7e2238c59a3
 
-https://github.com/ebrahimabdelghfar/DEBI_competition/assets/81301684/ce14b0e4-5c77-486a-b484-b786412002d8
 
