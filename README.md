@@ -50,15 +50,14 @@ ssh ubuntu@<ip_of_the_robot>
 ## Day 2 Todo
 - [x] Make map from starting position (3)
 - [x] Collect bag after maping (4)
-- [x] Ask enna ezay nzbot el latency (5) --------> m4 han3rf n3ml 7aga hanm4e el robot bera7a awwwy
-- [x] test el arm of the robot (1) 
+- [x] test arm of the robot (1) 
 - [x] move el robot o howa 4ayf el balls (2) 
 ## Day 3 Todo
-- [ ] test amcl on real life
-- [ ] test bashscript bta3 el connection 
-- [ ] test perception  
-- [ ] test PID
-- [ ] 2dem el camera 
+- [x] test amcl on real life
+- [x] test bashscript bta3 el connection 
+- [x] test perception  
+- [x] test PID
+- [x] 2dem el camera 
 # Topics of Real life
 ```
 /battery_state
@@ -91,4 +90,9 @@ ssh ubuntu@<ip_of_the_robot>
 # Output of meeting 4/5/2023
  * Slightly tune Hough 
  * t3rfo ezay 45al transform 
-# 
+# Video
+
+
+
+https://github.com/ebrahimabdelghfar/DEBI_competition/assets/81301684/ce14b0e4-5c77-486a-b484-b786412002d8
+
